@@ -4,7 +4,8 @@
   "info": {
     "singularName": "evento",
     "pluralName": "eventos",
-    "displayName": "Eventos"
+    "displayName": "Eventos",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -16,11 +17,12 @@
       "required": true
     },
     "Imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Horario": {
       "type": "time",
@@ -34,6 +36,10 @@
     "Descripcion": {
       "type": "text",
       "maxLength": 50,
+      "required": true
+    },
+    "Fecha": {
+      "type": "date",
       "required": true
     }
   }
