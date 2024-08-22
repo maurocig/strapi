@@ -4,7 +4,8 @@
   "info": {
     "singularName": "actividad",
     "pluralName": "actividades",
-    "displayName": "Actividades"
+    "displayName": "Actividades",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,6 +15,37 @@
     "Titulo": {
       "type": "string",
       "required": true
+    },
+    "Imagen": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Horario": {
+      "type": "time"
+    },
+    "Precio": {
+      "type": "integer"
+    },
+    "Descripcion": {
+      "type": "string"
+    },
+    "Fecha": {
+      "type": "date"
+    },
+    "Dia": {
+      "type": "enumeration",
+      "enum": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes",
+        "Sábado",
+        "Domingo"
+      ]
     }
   }
 }

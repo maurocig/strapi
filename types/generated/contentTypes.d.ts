@@ -794,12 +794,29 @@ export interface ApiActividadActividad extends Schema.CollectionType {
     singularName: 'actividad';
     pluralName: 'actividades';
     displayName: 'Actividades';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     Titulo: Attribute.String & Attribute.Required;
+    Imagen: Attribute.Media;
+    Horario: Attribute.Time;
+    Precio: Attribute.Integer;
+    Descripcion: Attribute.String;
+    Fecha: Attribute.Date;
+    Dia: Attribute.Enumeration<
+      [
+        'Lunes',
+        'Martes',
+        'Mi\u00E9rcoles',
+        'Jueves',
+        'Viernes',
+        'S\u00E1bado',
+        'Domingo'
+      ]
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
