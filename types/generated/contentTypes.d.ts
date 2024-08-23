@@ -801,10 +801,10 @@ export interface ApiActividadActividad extends Schema.CollectionType {
   };
   attributes: {
     Titulo: Attribute.String & Attribute.Required;
-    Imagen: Attribute.Media;
-    Horario: Attribute.Time;
+    Imagen: Attribute.Media & Attribute.Required;
+    Horario: Attribute.Time & Attribute.Required;
     Precio: Attribute.Integer;
-    Descripcion: Attribute.String;
+    Descripcion: Attribute.String & Attribute.Required;
     Fecha: Attribute.Date;
     Dia: Attribute.Enumeration<
       [
@@ -816,7 +816,8 @@ export interface ApiActividadActividad extends Schema.CollectionType {
         'S\u00E1bado',
         'Domingo'
       ]
-    >;
+    > &
+      Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

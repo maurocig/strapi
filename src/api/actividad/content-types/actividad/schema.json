@@ -17,20 +17,23 @@
       "required": true
     },
     "Imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Horario": {
-      "type": "time"
+      "type": "time",
+      "required": true
     },
     "Precio": {
       "type": "integer"
     },
     "Descripcion": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "Fecha": {
       "type": "date"
@@ -45,7 +48,8 @@
         "Viernes",
         "Sábado",
         "Domingo"
-      ]
+      ],
+      "required": true
     }
   }
 }
