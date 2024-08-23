@@ -797,7 +797,7 @@ export interface ApiActividadActividad extends Schema.CollectionType {
     description: '';
   };
   options: {
-    draftAndPublish: true;
+    draftAndPublish: false;
   };
   attributes: {
     Titulo: Attribute.String & Attribute.Required;
@@ -820,7 +820,6 @@ export interface ApiActividadActividad extends Schema.CollectionType {
       Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::actividad.actividad',
       'oneToOne',
