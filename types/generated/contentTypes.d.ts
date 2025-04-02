@@ -818,6 +818,17 @@ export interface ApiActividadActividad extends Schema.CollectionType {
       ]
     > &
       Attribute.Required;
+    Dia_2: Attribute.Enumeration<
+      [
+        'Lunes',
+        'Martes',
+        'Mi\u00E9rcoles',
+        'Jueves',
+        'Viernes',
+        'S\u00E1bado',
+        'Domingo'
+      ]
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

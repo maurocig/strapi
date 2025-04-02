@@ -50,6 +50,18 @@
         "Domingo"
       ],
       "required": true
+    },
+    "Dia_2": {
+      "type": "enumeration",
+      "enum": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes",
+        "Sábado",
+        "Domingo"
+      ]
     }
   }
 }
