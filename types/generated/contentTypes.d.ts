@@ -804,7 +804,7 @@ export interface ApiActividadActividad extends Schema.CollectionType {
     Imagen: Attribute.Media & Attribute.Required;
     Horario: Attribute.Time & Attribute.Required;
     Precio: Attribute.Integer;
-    Descripcion: Attribute.String & Attribute.Required;
+    Descripcion: Attribute.Text & Attribute.Required;
     Fecha: Attribute.Date;
     Dia: Attribute.Enumeration<
       [

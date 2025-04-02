@@ -32,7 +32,7 @@
       "type": "integer"
     },
     "Descripcion": {
-      "type": "string",
+      "type": "text",
       "required": true
     },
     "Fecha": {
